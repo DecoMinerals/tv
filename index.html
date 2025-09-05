@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Таблица для доски</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+      }
+      #table-frame {
+        width: 125%; /* растягиваем iframe для компенсации уменьшения */
+        height: 125%;
+        border: none;
+        transform: scale(0.8); /* уменьшаем до 80% */
+        transform-origin: top left;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe
+      id="table-frame"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSwjUm_CI7C82pX7nooWOKR9TriL-NQPKaY_lNeXnOk3YqhEDB-ItQ8KeXX9jAiQv-dbU2hC36M3qXC/pubhtml?gid=456159659&single=true&widget=true&headers=false"
+    >
+    </iframe>
+  </body>
+</html>
